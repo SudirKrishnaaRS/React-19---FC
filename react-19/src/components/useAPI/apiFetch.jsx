@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Card from "./misc/Card/Card";
+import Card from "../misc/Card/Card";
 
 const url = "https://jsonplaceholder.typicode.com/posts";
 

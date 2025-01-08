@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import "./App.css";
-import Posts from "./components/apiFetch";
-import PostsNew from "./components/apiFetchNew";
+import Posts from "./components/useAPI/apiFetch";
+import PostsNew from "./components/useAPI/apiFetchNew";
 
 function App() {
   return (
