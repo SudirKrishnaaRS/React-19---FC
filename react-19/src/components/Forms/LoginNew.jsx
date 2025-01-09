@@ -1,5 +1,6 @@
 import React, { useActionState } from "react";
 import { loginUser } from "../../api/user";
+import SubmitButton from "./SubmitButton";
 
 const LoginNew = () => {
   //   const [user, setUser] = useState(null);
@@ -38,9 +39,11 @@ const LoginNew = () => {
         <input type="password" id="password" name="password" required />
       </div>
 
-      <button type="submit" disabled={isPending}>
+      {/* <button type="submit" disabled={isPending}>
         {isPending ? "Logging in..." : "Login"}
-      </button>
+      </button> */}
+
+      <SubmitButton />
 
       {user?.data && (
         <p style={{ color: "green" }}>Logged in: {user.data.email}</p>
