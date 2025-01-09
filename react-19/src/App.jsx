@@ -4,6 +4,9 @@ import Posts from "./components/useAPI/apiFetch";
 import PostsNew from "./components/useAPI/apiFetchNew";
 import Parent from "./components/Ref/Parent";
 import ParentComp from "./components/Context/ParentComp";
+import Login from "./components/Forms/login";
+import LoginNew from "./components/Forms/LoginNew";
+import LoginTwo from "./components/Forms/LoginTwo";
 
 export const ThemeContext = createContext();
 
@@ -38,16 +41,23 @@ function App() {
       </ThemeContext.Provider> */}
 
       {/* ✨ New Approach */}
-      <ThemeContext value={themeValues}>
+      {/* <ThemeContext value={themeValues}>
         <ParentComp />
-      </ThemeContext>
+      </ThemeContext> */}
 
       {/* ________________________________________________________________ */}
 
       {/* === Ref === */}
-      <Parent />
+      {/* <Parent /> */}
 
       {/* ________________________________________________________________ */}
+
+      {/* === Forms === */}
+      {/* <Login /> */}
+      {/* <LoginTwo /> */}
+
+      {/* ✨ New Approach */}
+      <LoginNew />
     </>
   );
 }
