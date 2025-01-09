@@ -23,7 +23,7 @@ function App() {
       {/* Traditonal Approach: */}
       {/* <Posts /> */}
 
-      {/* New Approach: */}
+      {/* ✨ New Approach */}
       {/* <Suspense fallback={"Loading data..."}>
         <PostsNew />
       </Suspense> */}
