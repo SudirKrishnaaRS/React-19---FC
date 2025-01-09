@@ -7,6 +7,8 @@ import ParentComp from "./components/Context/ParentComp";
 import Login from "./components/Forms/login";
 import LoginNew from "./components/Forms/LoginNew";
 import LoginTwo from "./components/Forms/LoginTwo";
+import Task from "./components/useOptimistic/Task";
+import TaskNew from "./components/useOptimistic/TaskNew";
 
 export const ThemeContext = createContext();
 
@@ -57,7 +59,14 @@ function App() {
       {/* <LoginTwo /> */}
 
       {/* ✨ New Approach */}
-      <LoginNew />
+      {/* <LoginNew /> */}
+
+      {/* ________________________________________________________________ */}
+
+      {/* useOptimistic() Hook */}
+      {/* <Task /> */}
+      <TaskNew />
+      {/* ________________________________________________________________ */}
     </>
   );
 }
