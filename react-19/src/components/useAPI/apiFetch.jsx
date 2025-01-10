@@ -14,6 +14,7 @@ const Posts = () => {
       if (!response.ok) {
         throw new Error("Failed to fetch posts");
       }
+
       const result = await response.json();
       setData(result);
     } catch (err) {
