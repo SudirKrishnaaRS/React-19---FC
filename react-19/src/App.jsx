@@ -9,6 +9,7 @@ import LoginNew from "./components/Forms/LoginNew";
 import LoginTwo from "./components/Forms/LoginTwo";
 import Task from "./components/useOptimistic/Task";
 import TaskNew from "./components/useOptimistic/TaskNew";
+import SuspenseDemo from "./components/Suspense/SuspenseDemo";
 
 export const ThemeContext = createContext();
 
@@ -65,8 +66,10 @@ function App() {
 
       {/* useOptimistic() Hook */}
       {/* <Task /> */}
-      <TaskNew />
+      {/* <TaskNew /> */}
       {/* ________________________________________________________________ */}
+
+      <SuspenseDemo />
     </>
   );
 }
