@@ -3,6 +3,7 @@ import { useState, useOptimistic } from "react";
 const TaskNew = () => {
   const [tasks, setTasks] = useState([]);
 
+  //SYNTAX: const [optimisticState, setOptimisticState] = useOptimistic(state, updateFn )
   const [optimisticTasks, setOptimisticTask] = useOptimistic(
     tasks,
     (currentTasks, newTask) => [
